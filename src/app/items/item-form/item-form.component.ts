@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Item } from '../shared/item';
 import { ItemService } from '../shared/item.service';
+import { AuthService } from "../../core/auth.service";
+
 
 @Component({
   selector: 'item-form',
@@ -12,12 +14,14 @@ export class ItemFormComponent implements OnInit {
 
   item: Item = new Item();
 
-  constructor(private itemSvc: ItemService) { }
+  constructor(private itemSvc: ItemService,public auth: AuthService) { }
 
   ngOnInit() {
   }
-
   createItem() {
+
+    this.item.teachername = this.auth.currentUserDisplayName;
+
     this.itemSvc.createItem(this.item)
     this.item = new Item() // reset item
   }
