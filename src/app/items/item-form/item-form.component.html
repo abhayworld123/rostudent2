@@ -2,42 +2,42 @@
    
 
    <input [(ngModel)]="item.teachername" type="hidden" #teachername='ngModel'>
-
+    
 
     <label class="label">Name: </label>
 
     <input placeholder="Student Name " class="input"
-    [(ngModel)]="item.title"
-    required minlength="2" maxlength="23"
-    #title='ngModel' autofocus>
+      [(ngModel)]="item.title"
+      required minlength="2" maxlength="23"
+      #title='ngModel' autofocus>
+      
     <label class="label">ID: </label>
-     <input placeholder="Student Id" class="input"
+      <input placeholder="Student Id" class="input"
     
-    required minlength="2" maxlength="23"
+       required minlength="2" maxlength="23"
      autofocus>
 
      <label class="label">Email: </label>
      <input [(ngModel)]="item.email" placeholder="Student Email" class="input"
     
-    required minlength="2" maxlength="23"  #email='ngModel'
+        required minlength="2" maxlength="23"  #email='ngModel'
      autofocus>
 
-<label class="label">Marks: </label>
-     <input placeholder="Marks" class="input"
-    
-    required minlength="2" maxlength="23"
-     autofocus>
+    <label class="label">Marks: </label>
+    <input [(ngModel)]="item.marks" placeholder="Marks" class="input"
+       required minlength="2" maxlength="23" #marks='ngModel'
+       autofocus>
 
      <label class="label">No of Subjects </label>
      <input placeholder="No Of Subjects" class="input"
     
-    required minlength="2" maxlength="23"
+      required minlength="2" maxlength="23"
      autofocus>
 
      <label class="label">Attendance : </label>
      <input placeholder="Attendance" class="input"
     
-    required minlength="2" maxlength="23"
+       required minlength="2" maxlength="23"
      autofocus>
 
      <label class="label">Batch: </label>

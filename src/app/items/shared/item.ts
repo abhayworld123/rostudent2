@@ -6,6 +6,8 @@ export class Item {
   active: boolean = true;
   timeStamp: Date = new Date();
   email: string;
+  subjects:number;
+  MA:[any];
   Marks: number;
   attendance:number;
   Batch: String;

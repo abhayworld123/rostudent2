@@ -21,7 +21,7 @@ export class ItemFormComponent implements OnInit {
   createItem() {
 
     this.item.teachername = this.auth.currentUserDisplayName;
-
+    this.item.MA = ['abc','nms',90];
     this.itemSvc.createItem(this.item)
     this.item = new Item() // reset item
   }
