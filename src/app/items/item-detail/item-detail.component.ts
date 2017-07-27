@@ -9,11 +9,19 @@ import { Item } from '../shared/item';
 })
 export class ItemDetailComponent implements OnInit {
 
+  avg :any;
+  percentage:any;
+
   @Input() item: Item;
 
   constructor(private itemSvc: ItemService) { }
 
   ngOnInit() {
+
+    this.avg = ( this.item.marks1*1 + this.item.marks2*1 + this.item.marks3*1 + this.item.marks4*1 + this.item.marks5*1 )/5;
+      this.percentage = ( this.item.marks1*1 + this.item.marks2*1 + this.item.marks3*1 + this.item.marks4*1 + this.item.marks5*1 )/500  *100   ;
+  
+    
   }
 
   updateTimeStamp() {

@@ -18,8 +18,14 @@
 
   <p [ngClass]="{ 'strike-out': !item.active }">
   Next Exam {{ item.schedule }}
-</p>
 
+  Total Marks {{item.TotalMarks}}
+  Marks in Phy {{item.marks1}}
+
+  Avg Marks 
+   <p>{{item.average}}</p>
+
+ <p>per {{item.percentage}}</p> 
 </div>
 
 <div class="card-footer">

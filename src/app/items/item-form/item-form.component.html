@@ -23,16 +23,41 @@
         required minlength="2" maxlength="23"  #email='ngModel'
      autofocus>
 
-    <label class="label">Marks: </label>
-    <input [(ngModel)]="item.marks" placeholder="Marks" class="input"
-       required minlength="2" maxlength="23" #marks='ngModel'
+    <label class="label">Total Marks: </label>
+    <input [(ngModel)]="item.TotalMarks" placeholder="Total Marks" class="input"
+       required minlength="2" maxlength="23" #totalmarks='ngModel'
        autofocus>
 
-     <label class="label">No of Subjects </label>
-     <input placeholder="No Of Subjects" class="input"
+     <label class="label">Physics Marks </label>
+    <input [(ngModel)]="item.marks1" placeholder="Enter Physics marks" class="input"
+       required minlength="2" maxlength="23" #marks1='ngModel'
+       autofocus>
+       
+     <label class="label">Chemistry Marks </label>
+    <input [(ngModel)]="item.marks2" placeholder="Enter Chemistry marks" class="input"
+       required minlength="2" maxlength="23" #marks2='ngModel'
+       autofocus>
+       
+     <label class="label">Maths Marks </label>
+    <input [(ngModel)]="item.marks3" placeholder="Enter Maths marks" class="input"
+       required minlength="2" maxlength="23" #marks3='ngModel'
+       autofocus>
     
-      required minlength="2" maxlength="23"
-     autofocus>
+     <label class="label">Bio Marks </label>
+    <input [(ngModel)]="item.marks4" placeholder="Enter Bio marks" class="input"
+       required minlength="2" maxlength="23" #marks4='ngModel'
+       autofocus>  
+       
+       <label class="label">Other Marks: </label>
+    <input [(ngModel)]="item.marks5" placeholder="Enter other subject marks" class="input"
+       required minlength="2" maxlength="23" #marks5='ngModel'
+       autofocus>  
+
+
+     <label class="label">No of Subjects </label>
+     <input [(ngModel)]="item.noofsub" placeholder="No of subjets" class="input"
+       required minlength="2" maxlength="23" #noofsub='ngModel'
+       autofocus>
 
      <label class="label">Attendance : </label>
      <input placeholder="Attendance" class="input"

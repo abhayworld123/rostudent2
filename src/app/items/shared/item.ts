@@ -7,10 +7,17 @@ export class Item {
   timeStamp: Date = new Date();
   email: string;
   subjects:number;
-  MA:[any];
-  Marks: number;
+  subject:[any];
+  TotalMarks: number;
+  marks1: number;
+  marks2: number;
+  marks3: number;
+  marks4: number;
+  marks5: number;
   attendance:number;
+
   Batch: String;
   Testschedule: Date;
-
+  percentage:number;
+  average:number;
 }
