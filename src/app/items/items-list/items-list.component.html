@@ -2,8 +2,15 @@
 
 <p>This page is a demo of a very basic todo list in Angular, using the Firebase Realtime DB on the backend.</p>
 
-<div *ngFor="let item of items | async" class="card">
+<div *ngFor="let item of items | async ; let c = index" class="card">
+  <!-- <div *ngfor="let ab of percentilee">
+    ok
+  </div> -->
+ <p>percentile:   {{percentilee[c]}}</p> 
+ <p>rank: {{rank[c]}} </p> 
+ 
   <item-detail [item]='item'></item-detail>
+
 </div>
 
 <loading-spinner *ngIf="showSpinner"></loading-spinner>

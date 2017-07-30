@@ -14,18 +14,40 @@ export class ItemFormComponent implements OnInit {
 
   item: Item = new Item();
   avg : any;
+
+  items:any;
+  arr = [];
+  revarr =[];
   percentage:any;
+  percentile:any;
+  percentilee:any;
   ddb:any;
 ValueEventListener:any;
+
+
 
   constructor(private itemSvc: ItemService,public auth: AuthService) { 
 
      let my  = new Array;
-     
+          this.items = this.itemSvc.getItemsList({limitToLast: 5})
+        console.log(this.items);
+
+        
   }
 
   ngOnInit() 
   {
+
+
+    
+
+   
+
+
+
+
+  
+   
     // this.ddb = firebase.database().ref('items').orderByChild('percentage')
    
     // .once('value').then(function(snapshot) {
@@ -50,6 +72,14 @@ ValueEventListener:any;
   
 
   createItem(){
+     
+      // this.items = this.itemSvc.getItemsList({limitToLast: 5})
+
+      
+
+       
+      
+     
 
      this.avg = ( this.item.marks1*1 + this.item.marks2*1 + this.item.marks3*1 + this.item.marks4*1 + this.item.marks5*1 )/5;
       this.percentage = ( this.item.marks1*1 + this.item.marks2*1 + this.item.marks3*1 + this.item.marks4*1 + this.item.marks5*1 )/500  *100   ;
@@ -63,5 +93,9 @@ ValueEventListener:any;
     this.item = new Item() // reset item
     
   }
+
+ 
+
+
   
 }

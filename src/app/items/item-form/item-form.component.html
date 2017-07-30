@@ -54,10 +54,10 @@
        autofocus>  
 
 
-     <label class="label">No of Subjects </label>
+     <!-- <label class="label">No of Subjects </label>
      <input [(ngModel)]="item.noofsub" placeholder="No of subjets" class="input"
        required minlength="2" maxlength="23" #noofsub='ngModel'
-       autofocus>
+       autofocus> -->
 
      <label class="label">Attendance : </label>
      <input placeholder="Attendance" class="input"
@@ -71,9 +71,9 @@
     required minlength="2" maxlength="23"
      autofocus>
 <label class="label">Schedule: </label>
-     <input [(ngModel)]="item.schedule" type="date" placeholder="Schedule" class="input"
+     <input [(ngModel)]="item.Testschedule" type="date" placeholder="Schedule" class="input"
     
-    required minlength="2" maxlength="23" #shedule='ngModel'
+    required minlength="2" maxlength="23" #Testschedule='ngModel'
      autofocus>
 
     <div *ngIf="title.dirty">

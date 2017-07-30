@@ -15,7 +15,7 @@ export class Item {
   marks4: number;
   marks5: number;
   attendance:number;
-
+schedule:Date;
   Batch: String;
   Testschedule: Date;
   percentage:number;

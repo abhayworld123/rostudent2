@@ -17,13 +17,13 @@
   {{ item.timeStamp | date: 'medium' }}-->
 
   <p [ngClass]="{ 'strike-out': !item.active }">
-  Next Exam {{ item.schedule }}
+  <p>Next Exam Date {{ item.schedule }}</p>
 
-  Total Marks {{item.TotalMarks}}
-  Marks in Phy {{item.marks1}}
+  <p>Total Marks {{item.TotalMarks}}</p>
+  <p>Marks in Phy {{item.marks1}}</p>
 
-  Avg Marks 
-   <p>{{item.average}}</p>
+ <p> Avg Marks 
+   {{item.average}}</p>
 
  <p>per {{item.percentage}}</p> 
 </div>
